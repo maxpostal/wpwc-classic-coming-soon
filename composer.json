@@ -1,0 +1,25 @@
+{
+  "name": "wpwc/classic-coming-soon",
+  "description": "Adds a custom WooCommerce Coming Soon page for classic themes.",
+  "homepage": "https://wpwc.ru",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "WPWC",
+      "homepage": "https://wpwc.ru"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "WPWC\\ClassicComingSoon\\": "includes/"
+    }
+  }
+}
