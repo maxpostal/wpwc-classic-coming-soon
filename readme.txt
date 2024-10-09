@@ -49,3 +49,9 @@ For the plugin **Custom Coming Soon page for classic themes** to work, you must 
 3. Upload the **wpwc-classic-coming-soon** directory **/wp-content/plugins/**
 4. Go to `Plugins` → `Installed Plugins`.
 5. Click `Activate` under **Custom Coming Soon page for classic themes** plugin title.
+
+== Screenshots ==
+
+1. WooCommerce Coming Soon page.
+2. Frontend page for Coming soon mode only.
+2. Frontend page for Coming soon and Apply to store pages only mode.
