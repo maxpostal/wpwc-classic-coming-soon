@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WPWC classic Coming soon
+ * Plugin Name: WPWC classic Coming Soon
  * Requires Plugins: woocommerce
  * Plugin URI: https://wpwc.ru
  * Description: Adds a custom WooCommerce Coming Soon page for classic themes.

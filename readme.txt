@@ -1,4 +1,4 @@
-=== WPWC classic Coming soon ===
+=== WPWC classic Coming Soon ===
 Contributors: makspostal
 Tags: woocommerce, coming soon
 Requires at least: 6.0
@@ -23,15 +23,15 @@ Or copy the ready-made template(s) from the subfolder `templates` of this plugin
 
 = Requirements =
 
-For the plugin **Custom Coming Soon page for classic themes** to work, you must have installed and activated plugin **WooCommerce** of version 9.1 and higher.
+For the plugin **WPWC classic Coming Soon** to work, you must have installed and activated plugin **WooCommerce** of version 9.1 and higher.
 
 == Installation ==
 
 = Using The WordPress Dashboard (Recommended) =
 
 1. Go to `Plugins` → `Add New`.
-2. In a search field type **Custom Coming Soon page for classic themes** and hit enter.
-3. Click `Install Now` next to **Custom Coming Soon page for classic themes** by WPWC.
+2. In a search field type **WPWC classic Coming Soon** and hit enter.
+3. Click `Install Now` next to **WPWC classic Coming Soon** by WPWC.
 4. Click `Activate the plugin` when the installation is complete.
 
 = Uploading in WordPress Dashboard =
@@ -46,10 +46,10 @@ For the plugin **Custom Coming Soon page for classic themes** to work, you must 
 = Using FTP (Not Recommended) =
 
 1. Download **wpwc-classic-coming-soon.zip**.
-2. Extract the **Custom Coming Soon page for classic themes** directory to your computer.
+2. Extract the **WPWC classic Coming Soon** directory to your computer.
 3. Upload the **wpwc-classic-coming-soon** directory **/wp-content/plugins/**
 4. Go to `Plugins` → `Installed Plugins`.
-5. Click `Activate` under **Custom Coming Soon page for classic themes** plugin title.
+5. Click `Activate` under **WPWC classic Coming Soon** plugin title.
 
 == Screenshots ==
 
