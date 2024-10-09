@@ -1,0 +1,22 @@
+.closed-shop,
+.closed-shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 40px;
+    text-align: center;
+}
+
+.closed-shop_type_block {
+    margin: 30px 0 40px;
+}
+
+.closed-shop_type_fullscreen {
+    height: 100vh;
+}
+
+.closed-shop__message {
+    max-width: 600px;
+    margin: 0 0 40px 0;
+}

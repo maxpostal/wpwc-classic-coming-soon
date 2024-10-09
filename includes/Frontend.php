@@ -20,8 +20,22 @@ class Frontend {
 	 */
 	public static function init() {
 		static::$coming_soon_helper = new ComingSoonHelper();
+		add_action( 'wp_enqueue_scripts', [ __CLASS__, 'public_enqueue_styles' ] );
 		add_filter( 'coming-soon_template', [ __CLASS__, 'coming_soon_template' ], 100, 3 );
 		add_filter( 'woocommerce_coming_soon_exclude', [ __CLASS__, 'coming_soon_exclude' ] );
+	}
+
+	/**
+	 * Enqueue public styles.
+	 */
+	public static function public_enqueue_styles() {
+
+		wp_enqueue_style(
+			'wpwc-classic-coming-soon',
+			plugin_dir_url( WPWC_CLASSIC_COMING_SOON_FILE ) . 'assets/css/public.css',
+			[],
+			'1.0.1'
+		);
 	}
 
 	/**
