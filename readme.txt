@@ -8,10 +8,11 @@ Stable tag: 1.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Adds a custom WooCommerce Coming Soon page for classic themes.
+The plugin adds a custom WooCommerce Coming Soon page for classic themes.
 
 == Description ==
 
+The plugin adds a custom WooCommerce Coming Soon page for classic themes.
 The plugin uses the new [WooCommerce Coming Soon mode introduced in WooCommerce 9.1](https://woocommerce.com/document/configuring-woocommerce-settings/coming-soon-mode/).
 
 You can create 2 types of templates in your theme's folder:
