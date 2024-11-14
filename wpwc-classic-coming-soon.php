@@ -37,7 +37,7 @@ final class WPWC_ClassicComingSoon {
 	 *
 	 * @var WPWC_ClassicComingSoon|null The single instance of the class.
 	 */
-	private static ?WPWC_ClassicComingSoon $_instance = null;
+	private static ?WPWC_ClassicComingSoon $instance = null;
 
 	/**
 	 * Instance.
@@ -48,11 +48,11 @@ final class WPWC_ClassicComingSoon {
 	 */
 	public static function instance(): ?WPWC_ClassicComingSoon {
 
-		if ( is_null( self::$_instance ) ) {
-			self::$_instance = new self();
+		if ( is_null( self::$instance ) ) {
+			self::$instance = new self();
 		}
 
-		return self::$_instance;
+		return self::$instance;
 	}
 
 	/**
@@ -61,7 +61,7 @@ final class WPWC_ClassicComingSoon {
 	 * Perform some compatibility checks to make sure basic requirements are meet.
 	 * If all compatibility checks pass, initialize the functionality.
 	 */
-	public function __construct() {
+	private function __construct() {
 
 		! defined( 'WPWC_CLASSIC_COMING_SOON_FILE' ) && define( 'WPWC_CLASSIC_COMING_SOON_FILE', __FILE__ );
 
