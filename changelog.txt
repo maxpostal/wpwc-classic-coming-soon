@@ -1,4 +1,7 @@
 == Changelog ==
 
+= 1.0.1 =
+* IMPROVED Compatibility check with WordPress 6.7 and WooCommerce 9.4.
+
 = 1.0.0 =
 * The first version
