@@ -2,6 +2,7 @@
 
 namespace WPWC\ClassicComingSoon;
 
+use Automattic\Jetpack\Constants;
 use Automattic\WooCommerce\Internal\ComingSoon\ComingSoonHelper;
 
 defined( 'ABSPATH' ) || exit;
@@ -43,6 +44,8 @@ class Frontend {
 	 */
 	public static function coming_soon_template( $template, $type, $templates ): string {
 
+		global $_wp_current_template_content;
+
 		if ( static::$coming_soon_helper->is_site_coming_soon() ) {
 
 			$template = locate_template( 'site-coming-soon.php' );
@@ -52,8 +55,23 @@ class Frontend {
 		} elseif ( static::$coming_soon_helper->is_store_coming_soon() ) {
 
 			$template = locate_template( 'store-coming-soon.php' );
+			$template = ! empty( $template ) && file_exists( $template ) ? $template : dirname( WPWC_CLASSIC_COMING_SOON_FILE ) . '/templates/store-coming-soon.php';
 
-			return ! empty( $template ) && file_exists( $template ) ? $template : dirname( WPWC_CLASSIC_COMING_SOON_FILE ) . '/templates/store-coming-soon.php';
+			$WC_version = Constants::get_constant( 'WC_VERSION' );
+
+			if ( isset( $WC_version ) && version_compare( $WC_version, '9.5', '>=' ) ) {
+
+				$page_ID = apply_filters( 'wpwc_classic_coming_soon_store_only_content_id', null );
+				$post    = get_post( $page_ID );
+
+				if ( is_null( $page_ID ) || empty( $post ) ) {
+					return $template;
+				}
+
+				$_wp_current_template_content = apply_filters( 'the_content', $post->post_content );
+			}
+
+			return $template;
 
 		} else {
 			return '';

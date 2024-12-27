@@ -21,6 +21,17 @@ You can create 2 types of templates in your theme's folder:
 
 Or copy the ready-made template(s) from the subfolder `templates` of this plugin and place it into yours site theme folder.
 
+**IMPORTANT**: for WooCommerce version 9.5.1 and higher you have to use filter `wpwc_classic_coming_soon_store_only_content_id` for `Coming soon -> Apply to store pages only` mode.
+
+For example, add this PHP code snippet in `functions.php` of your theme:
+
+```
+add_filter( 'wpwc_classic_coming_soon_store_only_content_id', function () {
+	return 72663;
+} );
+```
+where `72663` is page ID which content will be used for `Coming soon -> Apply to store pages only` mode.
+
 = Requirements =
 
 For the plugin **WPWC classic Coming Soon** to work, you must have installed and activated plugin **WooCommerce** of version 9.1 and higher.
@@ -46,8 +57,8 @@ For the plugin **WPWC classic Coming Soon** to work, you must have installed and
 = Using FTP (Not Recommended) =
 
 1. Download **wpwc-classic-coming-soon.zip**.
-2. Extract the **WPWC classic Coming Soon** directory to your computer.
-3. Upload the **wpwc-classic-coming-soon** directory **/wp-content/plugins/**
+2. Extract the **wpwc-classic-coming-soon** folder to your computer.
+3. Upload the **wpwc-classic-coming-soon** folder to **/wp-content/plugins/** directory of your website.
 4. Go to `Plugins` → `Installed Plugins`.
 5. Click `Activate` under **WPWC classic Coming Soon** plugin title.
 

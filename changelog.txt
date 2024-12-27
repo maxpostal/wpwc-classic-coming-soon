@@ -1,7 +1,9 @@
 == Changelog ==
 
 = 1.0.1 =
-* IMPROVED Compatibility check with WordPress 6.7 and WooCommerce 9.4.
+* IMPROVED Compatibility check with WordPress 6.7 and WooCommerce 9.5.
+* FIX New WooCommerce condition - https://github.com/maxpostal/wpwc-classic-coming-soon/issues/1
+* NEW Filter `wpwc_classic_coming_soon_store_only_content_id` for point page ID which content will be used for `Coming soon -> Apply to store pages only` mode.
 
 = 1.0.0 =
 * The first version
