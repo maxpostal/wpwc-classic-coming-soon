@@ -25,11 +25,12 @@ Or copy the ready-made template(s) from the subfolder `templates` of this plugin
 
 For example, add this PHP code snippet in `functions.php` of your theme:
 
-```
-add_filter( 'wpwc_classic_coming_soon_store_only_content_id', function () {
-	return 72663;
-} );
-```
+`
+ add_filter( 'wpwc_classic_coming_soon_store_only_content_id', function () {
+ 	return 72663;
+ } );
+`
+
 where `72663` is page ID which content will be used for `Coming soon -> Apply to store pages only` mode.
 
 = Requirements =
