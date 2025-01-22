@@ -4,7 +4,7 @@
  * Requires Plugins: woocommerce
  * Plugin URI: https://wpwc.ru
  * Description: Adds a custom WooCommerce Coming Soon page for classic themes.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: WPWC
  * Author URI: https://profiles.wordpress.org/makspostal/
  * Text Domain: wpwc-classic-coming-soon

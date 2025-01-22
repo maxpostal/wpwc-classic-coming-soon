@@ -35,7 +35,7 @@ class Frontend {
 			'wpwc-classic-coming-soon',
 			plugin_dir_url( WPWC_CLASSIC_COMING_SOON_FILE ) . 'assets/css/public.css',
 			[],
-			'1.0.1'
+			'1.0.2'
 		);
 	}
 
