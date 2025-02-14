@@ -65,21 +65,7 @@ final class WPWC_ClassicComingSoon {
 
 		! defined( 'WPWC_CLASSIC_COMING_SOON_FILE' ) && define( 'WPWC_CLASSIC_COMING_SOON_FILE', __FILE__ );
 
-		add_action( 'init', [ $this, 'i18n' ] );
 		add_action( 'woocommerce_loaded', [ $this, 'init' ] );
-	}
-
-	/**
-	 * Load plugin textdomain.
-	 *
-	 * @return void
-	 */
-	public function i18n() {
-		load_plugin_textdomain(
-			'wpwc-classic-coming-soon',
-			false,
-			dirname( plugin_basename( WPWC_CLASSIC_COMING_SOON_FILE ) ) . '/languages'
-		);
 	}
 
 	/**
