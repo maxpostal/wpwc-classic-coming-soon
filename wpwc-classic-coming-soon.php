@@ -65,6 +65,11 @@ final class WPWC_ClassicComingSoon {
 
 		! defined( 'WPWC_CLASSIC_COMING_SOON_FILE' ) && define( 'WPWC_CLASSIC_COMING_SOON_FILE', __FILE__ );
 
+		add_action( 'before_woocommerce_init', function () {
+			if ( class_exists( FeaturesUtil::class ) ) {
+				FeaturesUtil::declare_compatibility( 'custom_order_tables', WPWC_CLASSIC_COMING_SOON_FILE, true );
+			}
+		} );
 		add_action( 'woocommerce_loaded', [ $this, 'init' ] );
 	}
 
@@ -72,13 +77,6 @@ final class WPWC_ClassicComingSoon {
 	 * Initialize.
 	 */
 	public function init() {
-
-		add_action( 'before_woocommerce_init', function () {
-			if ( class_exists( FeaturesUtil::class ) ) {
-				FeaturesUtil::declare_compatibility( 'custom_order_tables', WPWC_CLASSIC_COMING_SOON_FILE, true );
-			}
-		} );
-
 		Frontend::init();
 	}
 }
